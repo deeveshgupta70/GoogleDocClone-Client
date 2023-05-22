@@ -45,7 +45,7 @@ const Editor = () => {
     }, []);
 
     useEffect(()=>{
-        const socketServer = io('http://localhost:9000');
+        const socketServer = io('https://googledoc-server.onrender.com');
         setSocket(socketServer);
         
         return ()=>{
